@@ -1,42 +1,37 @@
-{
-  var chocolateBars =
-["snickers", "hundred grand", "kitkat", "skittles"];
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
-  chocolateBars.push("twix");
+    console.log(chocolateBars);
 
-  console.log(chocolateBars);
-}
 
-{
-var addElementToBeginningOfArray = ["blue", "orange", "black", "pink"];
+var colors = beginArray("blue", "orange", "black", "pink");
 
-  addElementToBeginningOfArray = [...addElementToBeginningOfArray, "green"];
+
+var begin = function addElementToBeginningOfArray(colors, color){
   
-  console.log(addElementToBeginningOfArray);
-}
+  console.log(begin, "green");
+  };
 
-{
-var destructivelyAddElementToBeginningOfArray = ["king", "queen", "jack", "10"];
-  destructivelyAddElementToBeginningOfArray.unshift("ace");
+
+var cards = cardArray("king", "queen", "jack", "10");
+
+var card = function destructivelyAddElementToBeginningOfArray(deck){
+  cards.unshift("ace");
+  console.log(card);
+  };
+
+var end = function addElementToEndOfArray(){
+  learn("learn", "to");
   
-  console.log(destructivelyAddElementToBeginningOfArray);
-}
+  console.log(end + "code");
+  };
 
-{
-var addElementToEndOfArray = ["learn", "to"];
- 
-  addElementToEndOfArray = ["code",...addElementToEndOfArray];
+var ser = function destructivelyAddElementToEndOfArray(){
+  rock("software", "engineers");
   
-  console.log(addElementToEndOfArray);
-}
+  rock.push("rock");
 
-{
-var destructivelyAddElementToEndOfArray = ["software", "engineers"];
-  
-  destructivelyAddElementToEndOfArray.push("rock");
-
-  console.log(destructivelyAddElementToEndOfArray);
-}
+  console.log(ser);
+  };
 
 {
 var accessElementInArray = ["women", "who", "code", "rock"];
